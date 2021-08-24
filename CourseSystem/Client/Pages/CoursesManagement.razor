@@ -1,0 +1,81 @@
+﻿@page "/coursesManagement"
+@using BootstrapBlazor.Components
+@using CourseSystem.Server.Models
+@using CourseSystem.Shared
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@attribute [Authorize]
+@if(isLoading)
+{
+    <div class="d-flex align-items-center">
+        <strong>Loading...</strong>
+        <Spinner Class="ms-auto"></Spinner>
+    </div>
+}
+else
+{
+    <div class="qanCard showAnim tableCard">
+    <Table TItem="CourseInfoData" Items="@courseInfoData" IsBordered="true" ShowSearch="true" ShowEditButton="true" OnQueryAsync="@OnQueryAsync"
+    SearchModel="@SearchModel" ShowDeleteButton="true" ShowExtendButtons="true" ShowToolbar="true"  ShowLoading="true" 
+    IsAutoRefresh="true" AutoRefreshInterval="1000" OnAddAsync="@OnAddAsync" OnSaveAsync="@OnSaveAsync" IsMultipleSelect="true" OnDeleteAsync="@OnDeleteAsync" IsPagination="true" PageItemsSource="@PageItemsSource">
+        <TableColumns>
+            <TableColumn @bind-Field="@context.CourseName" Text="课程名称" Searchable="true" />
+            <TableColumn @bind-Field="@context.TeacherName" Text="教师" Searchable="true"/>
+            <TableColumn @bind-Field="@context.Score" Text="学分" Searchable="true"/>
+            <TableColumn @bind-Field="@context.Time" Text="时间" Searchable="true">
+            <Template Context="value">
+                    @if (value.Value == null || value.Value.Replace(" ", "") == "")
+                    {
+                        <div>无上课时间</div>
+                    }
+                    else
+                    {
+                        <div>@("星期"+week[int.Parse(value.Value.Split('-')[0])-1]+' '+value.Value.Split('-')[1]+"节")</div>
+                    }
+                </Template>
+             </TableColumn>
+            <TableColumn @bind-Field="@context.Type" Text="类型" Searchable="true"/>
+            <TableColumn @bind-Field="@context.Major" Text="专业" Searchable="true"/>
+             <TableColumn @bind-Field="@context.Students" Text="选课人数" Searchable="false">
+                <Template Context="value">
+                    @if (value.Value == null || value.Value.Replace(" ", "") == "")
+                    {
+                        <div>0</div>
+                    }
+                    else
+                    {
+                        <div>@value.Value.Replace(" ", "").Split(',').Length</div>
+                    }
+                </Template>
+             </TableColumn>
+             <TableColumn @bind-Field="@context.MaxStuNum" Text="最大选课人数" Searchable="false"/>
+        </TableColumns>
+         <EditTemplate>
+            <div class="row g-3 form-inline">
+                <div class="col-12 col-sm-6">
+                    <BootstrapInput @bind-Value="@context.CourseName" placeholder="不可为空，50字以内" maxlength="50" />
+                </div>
+                <div class="col-12 col-sm-6">
+                    <BootstrapInput @bind-Value="@context.TeacherId" placeholder="不可为空，50字以内" maxlength="50" />
+                </div>
+                <div class="col-12 col-sm-6">
+                    <BootstrapInput @bind-Value="@context.Score" placeholder="不可为空，10字以内" maxlength="10" />
+                </div>
+                <div class="col-12 col-sm-6">
+                    <BootstrapInput @bind-Value="@context.Time" placeholder="不可为空，50字以内" maxlength="50" />
+                </div>
+                <div class="col-12 col-sm-6">
+                    <BootstrapInput @bind-Value="@context.Type" placeholder="不可为空，10字以内" maxlength="50" />
+                </div>
+                <div class="col-12 col-sm-6">
+                    <BootstrapInput @bind-Value="@context.Major" placeholder="不可为空，10字以内" maxlength="50" />
+                </div>
+                <div class="col-12 col-sm-6">
+                    <BootstrapInput @bind-Value="@context.MaxStuNum" placeholder="不可为空，10字以内" maxlength="50" />
+                </div>
+            </div>
+        </EditTemplate>
+    </Table>
+    </div>
+    <Toast />
+}

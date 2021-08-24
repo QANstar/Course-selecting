@@ -1,0 +1,12 @@
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\bin\Debug\net6.0\CourseSystem.Entity.deps.json
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\bin\Debug\net6.0\CourseSystem.Entity.dll
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\bin\Debug\net6.0\ref\CourseSystem.Entity.dll
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\bin\Debug\net6.0\CourseSystem.Entity.pdb
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\obj\Debug\net6.0\CourseSystem.Entity.csproj.AssemblyReference.cache
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\obj\Debug\net6.0\CourseSystem.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\obj\Debug\net6.0\CourseSystem.Entity.AssemblyInfoInputs.cache
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\obj\Debug\net6.0\CourseSystem.Entity.AssemblyInfo.cs
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\obj\Debug\net6.0\CourseSystem.Entity.csproj.CoreCompileInputs.cache
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\obj\Debug\net6.0\CourseSystem.Entity.dll
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\obj\Debug\net6.0\ref\CourseSystem.Entity.dll
+D:\QAN_Program\Web\DotNet\CourseSystem.Entity\obj\Debug\net6.0\CourseSystem.Entity.pdb

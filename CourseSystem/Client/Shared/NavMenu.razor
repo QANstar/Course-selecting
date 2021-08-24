@@ -1,0 +1,55 @@
+﻿<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">学生选课系统</a>
+    <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <AuthorizeView>
+             <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                        <span class="oi oi-home" aria-hidden="true"></span> 首页
+                    </NavLink>
+                </div>
+                @if(long.Parse(context.User.Identity.Name) > 100000000000)
+                {
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="studentInfo">
+                            <span class="oi oi-book" aria-hidden="true"></span> 学生信息
+                        </NavLink>
+                    </div>
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="courseSelection">
+                            <span class="oi oi-plus" aria-hidden="true"></span> 选课
+                        </NavLink>
+                    </div>
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="chosenCourses">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> 已选课程
+                        </NavLink>
+                    </div>
+                }
+                else if(long.Parse(context.User.Identity.Name) > 100000 && long.Parse(context.User.Identity.Name) < 100000000000)
+                {
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="teacherCourses">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> 教学课程信息
+                        </NavLink>
+                    </div>
+                }
+                else if(long.Parse(context.User.Identity.Name) > 0 && long.Parse(context.User.Identity.Name) < 100000)
+                {
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="coursesManagement">
+                            <span class="oi oi-list-rich" aria-hidden="true"></span> 课程管理
+                        </NavLink>
+                    </div>
+                }
+
+            </Authorized>
+        </AuthorizeView>    
+    </nav>
+</div>

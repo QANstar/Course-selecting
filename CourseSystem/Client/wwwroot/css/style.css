@@ -1,0 +1,115 @@
+﻿.contentSetting {
+    background-color: #f5f6fa;
+}
+
+.qanCard {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 4%);
+    border-radius: 10px;
+    margin-bottom: 2vh;
+}
+
+.cardBox {
+}
+
+.personInfoCard {
+    height: 35vh;
+    padding: 10px;
+    font-size: 2vh;
+}
+
+.personInfoContent p {
+    margin-bottom: 1vh;
+}
+
+.explainCard {
+    padding: 10px;
+    font-size: 2vh;
+    height: 50vh;
+}
+
+.dangerCard {
+    background-color: #f96868;
+    color: #fff;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 4%);
+}
+
+.purpleCard {
+    background-color: #926dde;
+    color: #fff;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 4%);
+}
+
+.successCard {
+    background-color: #33cabb;
+    color: #fff;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 4%);
+}
+
+.mainFont {
+    font-size: 1.8vw !important;
+}
+
+.showAnim {
+    -webkit-animation: showAnimation 1s; /* Safari and Chrome */
+}
+
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+
+@-webkit-keyframes showAnimation /* Safari and Chrome */
+{
+    from {
+        margin-top: 100vh;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.tableCard {
+    padding:10px;
+}
+
+.moreInfoCard{
+    height:44vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vh;
+}
+
+.nav {
+    justify-content: center !important;
+}
+
+.meanuSetting{
+    margin-bottom:10px;
+}
+
+.homeCard {
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

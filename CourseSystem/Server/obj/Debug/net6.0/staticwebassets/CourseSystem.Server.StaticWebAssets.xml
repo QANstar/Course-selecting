@@ -1,0 +1,8 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="D:\QAN_Program\Web\DotNet\CourseSystem\CourseSystem\Client\bin\Debug\net6.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\QAN_Program\Web\DotNet\CourseSystem\CourseSystem\Client\obj\Debug\net6.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="D:\QAN_Program\Web\DotNet\CourseSystem\CourseSystem\Client\wwwroot\" />
+  <ContentRoot BasePath="/Identity" Path="C:\Users\14353\.nuget\packages\microsoft.aspnetcore.identity.ui\6.0.0-preview.6.21355.2\staticwebassets\V4\" />
+  <ContentRoot BasePath="_content/BootstrapBlazor" Path="C:\Users\14353\.nuget\packages\bootstrapblazor\5.5.4\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\14353\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\6.0.0-preview.6.21355.2\build\..\staticwebassets\" />
+</StaticWebAssets>

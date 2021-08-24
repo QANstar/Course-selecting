@@ -1,0 +1,62 @@
+﻿@page "/courseSelection"
+@using BootstrapBlazor.Components
+@using CourseSystem.Server.Models
+@using CourseSystem.Shared
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@attribute [Authorize]
+@if(isLoading)
+{
+    <div class="d-flex align-items-center">
+        <strong>Loading...</strong>
+        <Spinner Class="ms-auto"></Spinner>
+    </div>
+}
+else
+{
+    <div class="qanCard showAnim tableCard">
+    <div class="meanuSetting">
+        <Menu Items="MenuItems" DisableNavigation="true" OnClick="@OnClickMenu" />
+	</div>
+    <Table TItem="CourseInfoData" Items="@courseInfoData" IsBordered="true" ShowSearch="true" ShowEditButton="false" OnQueryAsync="@OnQueryAsync"
+    SearchModel="@SearchModel" ShowDeleteButton="false" ShowExtendButtons="true" ShowToolbar="true" ShowDefaultButtons="false" ShowLoading="true" 
+    IsAutoRefresh="true" AutoRefreshInterval="1000" IsPagination="true" PageItemsSource="@PageItemsSource">
+        <TableColumns>
+            <TableColumn @bind-Field="@context.CourseName" Text="课程名称" Searchable="true" />
+            <TableColumn @bind-Field="@context.TeacherName" Text="教师" Searchable="true"/>
+            <TableColumn @bind-Field="@context.Score" Text="学分" Searchable="true"/>
+            <TableColumn @bind-Field="@context.Time" Text="时间" Searchable="true">
+            <Template Context="value">
+                    @if (value.Value == null || value.Value.Replace(" ", "") == "")
+                    {
+                        <div>无上课时间</div>
+                    }
+                    else
+                    {
+                        <div>@("星期"+week[int.Parse(value.Value.Split('-')[0])-1]+' '+value.Value.Split('-')[1]+"节")</div>
+                    }
+                </Template>
+             </TableColumn>
+             <TableColumn @bind-Field="@context.Students" Text="选课人数" Searchable="false">
+                <Template Context="value">
+                    @if (value.Value == null || value.Value.Replace(" ", "") == "")
+                    {
+                        <div>0</div>
+                    }
+                    else
+                    {
+                        <div>@value.Value.Replace(" ", "").Split(',').Length</div>
+                    }
+                </Template>
+             </TableColumn>
+             <TableColumn @bind-Field="@context.MaxStuNum" Text="最大选课人数" Searchable="false"/>
+        </TableColumns>
+        <RowButtonTemplate>
+            <PopConfirmButton  Size="Size.ExtraSmall" Color="Color.Primary" Icon="fa fa-edit" Text="选课" OnConfirm="@(() => OnRowButtonClick(context))" />
+        </RowButtonTemplate>
+    </Table>
+    </div>
+    <Toast />
+    <SweetAlert />
+
+}

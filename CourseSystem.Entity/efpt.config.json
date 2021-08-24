@@ -1,0 +1,56 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "CourseselectiondbContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": null,
+   "ProjectRootNamespace": "CourseSystem.Entity",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[CourseData]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[RolesTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[StudentInfo]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[StudentsCourseInfoTable]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TeacherInfo]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TrainingPlan]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "(localdb)\\MSSQLLocalDB.aspnet-CourseSystem.Server-7636730D-75B4-4A4B-A245-81E15546F5A7",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": true,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseNoConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}

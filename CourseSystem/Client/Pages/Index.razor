@@ -1,0 +1,104 @@
+﻿@page "/studentInfo"
+@using BootstrapBlazor.Components
+@using CourseSystem.Shared
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@attribute [Authorize]
+@if (studentInfoData.Count == 0 && trainingPlanInfoData.Count == 0 && studentsCoursesData.Count == 0)
+{
+    <div class="d-flex align-items-center">
+        <strong>Loading...</strong>
+        <Spinner Class="ms-auto"></Spinner>
+    </div>
+}
+else
+{
+    <div class="row ">
+	<div class="col-md-3 cardBox">
+		<div class='personInfoCard qanCard showAnim'>
+			<div class="personInfoHead">
+				<h5>学生信息</h5>
+			</div>
+			<hr>
+			<div class="personInfoContent">
+				<p><span>学号：</span><span>@studentInfoData[0].Id</span></p>
+				<p><span>姓名：</span><span>@studentInfoData[0].Name</span></p>
+				<p><span>年级：</span><span>@studentInfoData[0].Grade</span></p>
+				<p><span>院系：</span><span>@studentInfoData[0].College</span></p>
+				<p><span>专业：</span><span>@studentInfoData[0].Major</span></p>
+				<p><span>班级：</span><span>@studentInfoData[0].Class</span></p>
+				
+			</div>
+		</div>
+		<div class="explainCard qanCard showAnim">
+			<h5>选课说明</h5>
+			<hr>
+			<p><span>选课学期：</span><span>2021-2022学年第一学期</span></p>
+			<p><span>选课时间：</span><span>8月12号~9月6号</span></p>
+			<span>选课概述：</span>
+			<p style="line-height:30px">	本次选课开放必修、选修和辅修三种课程。本次选课的学分上限为32，超过的学分不给予记录。选课模式为即选即得。本选课系统为超级简化测试版，如果出问题制作人一概不付任何责任（狗头）。</p>
+		</div>
+	</div>
+	<div class="col-md-9 row" style="align-content: flex-start">
+		<div class="col-md-4 cardBox showAnim">
+			<div class="qanCard dangerCard">
+				<span>选课学分上限：</span><span clase="mainFont">32</span><span>学分</span>
+			</div>
+		</div>
+		<div class="col-md-4 cardBox showAnim">
+			<div class="qanCard purpleCard">
+				<span>当前已选学分：</span><span clase="mainFont">@(studentsCoursesData[0].ChooseElectiveScore+studentsCoursesData[0].ChooseMinorScore+studentsCoursesData[0].ChooseRequiredScore)</span><span>学分</span>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="qanCard successCard showAnim">
+				<span>当前已选门数：</span><span clase="mainFont">@chosenCourseNum</span><span>门</span>
+			</div>
+		</div>
+		<div class="col-md-12 qanCard tableCard showAnim" style="padding:10px;">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>类型</th>
+						<th>进度</th>
+						<th>总学分</th>
+						<th>已经得学分</th>
+						<th>尚需学分</th>
+						<th>已选学分</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr>
+							<td>必修</td>
+							<td><Progress IsStriped="true" Value="@((studentsCoursesData[0].CompletedRequiredScore*100)/(int.Parse(trainingPlanInfoData[0].RequiredScore)))" Color="Color.Warning" IsShowValue="true"></Progress></td>
+							<td>@trainingPlanInfoData[0].RequiredScore</td>
+							<td>@studentsCoursesData[0].CompletedRequiredScore</td>
+							<td>@(int.Parse(trainingPlanInfoData[0].RequiredScore)-studentsCoursesData[0].CompletedRequiredScore)</td>
+							<td>@studentsCoursesData[0].ChooseRequiredScore</td>
+						</tr>
+						<tr>
+							<td>选修</td>
+							<td><Progress IsStriped="true" Value="@((studentsCoursesData[0].CompletedElectiveScore*100)/(int.Parse(trainingPlanInfoData[0].OptionalScore)))" Color="Color.Warning" IsShowValue="true"></Progress></td>
+							<td>@trainingPlanInfoData[0].OptionalScore</td>
+							<td>@studentsCoursesData[0].CompletedElectiveScore</td>
+							<td>@(int.Parse(trainingPlanInfoData[0].OptionalScore)-studentsCoursesData[0].CompletedElectiveScore)</td>
+							<td>@studentsCoursesData[0].ChooseElectiveScore</td>
+						</tr>
+						<tr>
+							<td>辅修</td>
+							<td><Progress IsStriped="true" Value="@((studentsCoursesData[0].CompletedMinorScore*100)/(int.Parse(trainingPlanInfoData[0].MinorScore)))" Color="Color.Warning" IsShowValue="true"></Progress></td>
+							<td>@trainingPlanInfoData[0].MinorScore</td>
+							<td>@studentsCoursesData[0].CompletedMinorScore</td>
+							<td>@(int.Parse(trainingPlanInfoData[0].MinorScore)-studentsCoursesData[0].CompletedMinorScore)</td>
+							<td>@studentsCoursesData[0].ChooseMinorScore</td>
+						</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-12 qanCard moreInfoCard showAnim">
+			广告位招租
+		</div>
+	</div>
+	
+</div>
+}

@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = CourseSystem.Client
+build_property.RootNamespace = CourseSystem.Client
+build_property.ProjectDir = D:\QAN_Program\Web\DotNet\CourseSystem\CourseSystem\Client\
+build_property.RazorLangVersion = 5.0
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\QAN_Program\Web\DotNet\CourseSystem\CourseSystem\Client
+build_property._RazorSourceGeneratorDebug = 
+build_property._RazorSourceGeneratorHeapDumps = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Pages/ChosenCoursesTable.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hvc2VuQ291cnNlc1RhYmxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Pages/CourseSelectionTable.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlU2VsZWN0aW9uVGFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Pages/CoursesManagement.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc01hbmFnZW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Pages/TeacherCourses.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlckNvdXJzZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1pi8kdd0pu
+
+[d:/QAN_Program/Web/DotNet/CourseSystem/CourseSystem/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-w3a9r8bjz5

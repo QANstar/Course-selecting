@@ -1,0 +1,12 @@
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\bin\Debug\net6.0\CourseSystem.Shared.deps.json
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\bin\Debug\net6.0\CourseSystem.Shared.dll
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\bin\Debug\net6.0\ref\CourseSystem.Shared.dll
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\bin\Debug\net6.0\CourseSystem.Shared.pdb
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\obj\Debug\net6.0\CourseSystem.Shared.csproj.AssemblyReference.cache
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\obj\Debug\net6.0\CourseSystem.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\obj\Debug\net6.0\CourseSystem.Shared.AssemblyInfoInputs.cache
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\obj\Debug\net6.0\CourseSystem.Shared.AssemblyInfo.cs
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\obj\Debug\net6.0\CourseSystem.Shared.csproj.CoreCompileInputs.cache
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\obj\Debug\net6.0\CourseSystem.Shared.dll
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\obj\Debug\net6.0\ref\CourseSystem.Shared.dll
+D:\QAN_Program\Web\DotNet\CourseSystem\Shared\obj\Debug\net6.0\CourseSystem.Shared.pdb

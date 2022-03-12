@@ -11,7 +11,7 @@
   前端框架：Blazor  
   前端ui框架：BootstrapBlazor  
   后端语言：ASP.NET CORE  
-  
+  .Net版本：6.0.0-preview.6.21355.2  
   数据库：local sql server  
   
 ## 运行界面
